@@ -227,7 +227,6 @@ jobs:
           compress_assets: "auto" # 自定义打包
           overwrite: true # 覆盖
           asset_name: "${{ env.BINARY }}-${{ matrix.goos }}-${{ matrix.goarch }}" # 自定义名称
-          allow_schedule: true
   # =============================================================================================================================================================================================
   Build-dev-next-image:
     needs: Check-version
@@ -332,7 +331,6 @@ jobs:
           compress_assets: "auto" # 自定义打包
           overwrite: true # 覆盖
           asset_name: "${{ env.BINARY }}-${{ matrix.goos }}-${{ matrix.goarch }}" # 自定义名称
-          allow_schedule: true
   # =============================================================================================================================================================================================
   Mark-image-version:
     needs:
