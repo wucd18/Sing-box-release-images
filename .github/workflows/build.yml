@@ -333,7 +333,7 @@ jobs:
           asset_name: "${{ env.BINARY }}-${{ matrix.goos }}-${{ matrix.goarch }}" # 自定义名称
   # =============================================================================================================================================================================================
   Mark-image-version:
-    needs: 
+    needs:
       - Check-version
       - Create-release
       - Build-main-next-image
